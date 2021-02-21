@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container mt-5 border rounded p-5">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center pb-2"><u>Random selector:</u></h2>
+                <p class="p-3 text-center">Random Selection Generator. Let this tool quickly decide for you by selecting a choice from a list of items that you fill out.</p>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="h-100 w-100 bg-light d-flext align-items-center border rounded">
+                    <div class="p-3 rounded bg-light result-box">
+                        <span class="h3 d-block text-center choice-result">
+                            <!-- <img src="./banner.png" alt="banner" class="img-fluid"> -->
+                            <div class="loader m-auto"></div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row p-2">
+                    <div class="col-12 p-2 text-right">
+                        <button class="btn btn-success addChoice">Add Choice</button>
+                    </div>
+                    <div class="col-12 choice-holder">
+                        <label for=""><strong>Choices:</strong></label>
+                            <div class="input-group mb-3 choice-block">
+                                <input type="text" class="form-control shadow border p-4" placeholder="Choice..."/>
+                            </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-warning d-block w-100 shadow run">Run selection</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg==" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
